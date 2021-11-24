@@ -60,7 +60,8 @@ class GeoFireCollectionRef {
       return colRef.doc(id).set(data, SetOptions(merge: merge));
     } catch (e) {
       throw Exception(
-          'cannot call set on Query, use collection reference instead');
+        'cannot call set on Query, use collection reference instead',
+      );
     }
   }
 
